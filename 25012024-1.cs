@@ -6,35 +6,35 @@ using System.Threading.Tasks;
 
 namespace _25012024_1
 {
-    internal class Program
+internal class Program
+{
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Planet zemlja = new Planet(1, 2);
-            Satelit mjesec = new Satelit(3, 4);
-        }
+        Planet zemlja = new Planet(1, 2);
+        Satelit mjesec = new Satelit(3, 4);
     }
+}
 
-    class NebeskoTijelo
-    {
-        protected double BrzinaOkoOsi;
-        protected double BrzinaOkoSunca;
-    }
+class NebeskoTijelo
+{
+    protected double BrzinaOkoOsi;
+    protected double BrzinaOkoSunca;
+}
 
-    class Planet : NebeskoTijelo
+class Planet : NebeskoTijelo
+{
+    public Planet(double a, double b)
     {
-        public Planet(double a, double b)
-        {
-            BrzinaOkoOsi = a;
-            BrzinaOkoSunca = b;
-        }
+        BrzinaOkoOsi = a;
+        BrzinaOkoSunca = b;
     }
-    class Satelit : NebeskoTijelo
+}
+class Satelit : NebeskoTijelo
+{
+    public Satelit(double a, double b)
     {
-        public Satelit(double a, double b)
-        {
-            BrzinaOkoOsi = a;
-            BrzinaOkoSunca = b;
-        }
+        BrzinaOkoOsi = a;
+        BrzinaOkoSunca = b;
     }
+}
 }

@@ -6,30 +6,34 @@ using System.Threading.Tasks;
 
 namespace _25012024
 {
-    internal class Program
+internal class Program
+{
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Gepard g = new Gepard();
-            g.Opasnost();
-        }
+        Gepard g = new Gepard();
+        g.Opasnost();
     }
-    class Cat
+}
+class Cat
+{
+    bool opasna;
+    public bool Opasna
     {
-        bool opasna;
-        public bool Opasna { get => opasna; set => opasna = value; }
-
-        public virtual void Opasnost()
-        {
-            Opasna = false;
-        }
+        get => opasna;
+        set => opasna = value;
     }
 
-    class Gepard : Cat
+    public virtual void Opasnost()
     {
-        public override void Opasnost()
-        {
-            Opasna = true;
-        }
+        Opasna = false;
     }
+}
+
+class Gepard : Cat
+{
+    public override void Opasnost()
+    {
+        Opasna = true;
+    }
+}
 }
