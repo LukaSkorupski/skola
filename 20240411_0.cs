@@ -20,7 +20,7 @@ namespace _20240411
     {
         private string Naziv;
         private bool IgraLiSeLoptom;
-        private int BrojIgraca;
+        private byte BrojIgraca;
 
         public Sport(string naziv)
         {
@@ -31,7 +31,7 @@ namespace _20240411
             Naziv = naziv;
             IgraLiSeLoptom = igraLiSeLoptom;
         }
-        public Sport(string naziv, bool igraLiSeLoptom, int brojIgraca)
+        public Sport(string naziv, bool igraLiSeLoptom, byte brojIgraca)
         {
             Naziv = naziv;
             IgraLiSeLoptom = igraLiSeLoptom;
